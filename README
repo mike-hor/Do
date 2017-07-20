@@ -8,3 +8,7 @@ Do是一个很轻量文件加载和依赖关系管理的库。目前do.min.js（
 
 具体使用方法： http://kejun.github.com/Do/
 
+最新更新 2017-07-20
+
+更新支持本地localStorage缓存css和js 
+
