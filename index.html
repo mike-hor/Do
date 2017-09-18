@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+	<body>
+	</body>
+	<script type="text/javascript">
+		var publicPath = './test/';
+		//console.log(Do)
+	</script>
+	<script src="do.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		Do.setConfig('deepversion','1.0.3');
+		Do.add('a1', {
+			path: publicPath + 'a1.js?v=60'
+		});
+
+		Do.add('a2', {
+			path: publicPath + 'a2.js?v=60'
+		});
+
+		Do.add('a3', {
+			path: publicPath + 'a3.js?v=60'
+		});
+	</script>
+	<script type="text/javascript">
+		Do('a3', function() {
+			console.log('a3 loaded')
+		})
+	</script>
+
+</html>
